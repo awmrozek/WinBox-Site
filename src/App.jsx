@@ -44,6 +44,36 @@ function App() {
         >
           Add Second WinBox
         </button>
+	<button
+          onClick={() => addWinBox('Third WinBox', 'This is the third WinBox window.')}
+        >
+          Add Third WinBox
+        </button>
+        <button
+           onClick={() => addWinBox('Message', 'DFT (Design for Test) refers to the techniques and methodologies used to ensure that the final chip can be effectively tested for manufacturing defects')}
+	>
+	DFT
+	</button>
+        <button
+           onClick={() => addWinBox('Message', 'Scan chains, BIST, Boundary Scan JTAG, test compression, at-speed testing, memory test, analog mixed-signal testing')}
+	>
+	Scan chains
+	</button>
+        <button
+           onClick={() => addWinBox('Message', 'Cadence Modus, Synopsys DFTMAX, Mentor Tessent')}
+	>
+	Tools
+	</button>
+        <button
+           onClick={() => addWinBox('Message', 'used to specify the smallest time interval between two consecutive rising or falling edges of the clock that the cell can tolerate. This is also known as the minimum clock period for which the cell is designed to operate correctly')}
+	>
+	critical path
+	</button>
+        <button
+           onClick={() => addWinBox('Message', 'IR drop in ASIC (Application-Specific Integrated Circuit) design refers to the voltage drop that occurs when current flows through the resistive elements')}
+	>
+	Voltage drop
+	</button>
       </div>
 
       {/* Render all active WinBoxes */}
