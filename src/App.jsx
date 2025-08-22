@@ -18,7 +18,7 @@ function App() {
       y: 'center',
       border: 3,
       borderColor: '#002266',
-      background: '#002266'
+      background: '#599764'
     };
 
     setWinBoxes([...winBoxes, newWinBox]);
@@ -65,7 +65,7 @@ function App() {
 	Tools
 	</button>
         <button
-           onClick={() => addWinBox('Message', 'used to specify the smallest time interval between two consecutive rising or falling edges of the clock that the cell can tolerate. This is also known as the minimum clock period for which the cell is designed to operate correctly')}
+           onClick={() => addWinBox('Message', "used to specify the smallest <button onClick={() => addWinBox(\'Message\', \'Important\')}> time</button> interval between two consecutive rising or falling edges of the clock that the cell can tolerate. This is also known as the minimum clock period for which the cell is designed to operate correctly")}
 	>
 	critical path
 	</button>
