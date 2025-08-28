@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import WinBox from 'react-winbox';
 import 'winbox/dist/css/winbox.min.css';
+import './App.css';
 
 function App() {
   // State to keep track of active WinBoxes
@@ -32,44 +33,51 @@ function App() {
   return (
     <div>
       {/* Labels (buttons) to add new WinBoxes */}
-      <div style={{ marginBottom: '20px' }}>
+      <div>
         <button
+          className="button-tile"
           onClick={() => addWinBox('First WinBox', 'This is the first WinBox window.')}
-          style={{ marginRight: '10px' }}
         >
-          Add First WinBox
+        First
         </button>
         <button
+          className="button-tile"
           onClick={() => addWinBox('Second WinBox', 'This is the second WinBox window.')}
         >
-          Add Second WinBox
+        Second
         </button>
 	<button
+          className="button-tile"
           onClick={() => addWinBox('Third WinBox', 'This is the third WinBox window.')}
         >
-          Add Third WinBox
+        Third
         </button>
         <button
+           className="button-tile"
            onClick={() => addWinBox('Message', 'DFT (Design for Test) refers to the techniques and methodologies used to ensure that the final chip can be effectively tested for manufacturing defects')}
 	>
 	DFT
 	</button>
         <button
+           className="button-tile"
            onClick={() => addWinBox('Message', 'Scan chains, BIST, Boundary Scan JTAG, test compression, at-speed testing, memory test, analog mixed-signal testing')}
 	>
 	Scan chains
 	</button>
         <button
+           className="button-tile"
            onClick={() => addWinBox('Message', 'Cadence Modus, Synopsys DFTMAX, Mentor Tessent')}
 	>
 	Tools
 	</button>
         <button
-           onClick={() => addWinBox('Message', "used to specify the smallest <button onClick={() => addWinBox(\'Message\', \'Important\')}> time</button> interval between two consecutive rising or falling edges of the clock that the cell can tolerate. This is also known as the minimum clock period for which the cell is designed to operate correctly")}
+           className="button-tile"
+           onClick={() => addWinBox('Message', "is used to specify the smallest <button onClick={() => addWinBox(\'Message\', \'Important\')}> time</button> interval between two consecutive rising or falling edges of the clock that the cell can tolerate. This is also known as the minimum clock period for which the cell is designed to operate correctly")}
 	>
 	critical path
 	</button>
         <button
+           className="button-tile"
            onClick={() => addWinBox('Message', 'IR drop in ASIC (Application-Specific Integrated Circuit) design refers to the voltage drop that occurs when current flows through the resistive elements')}
 	>
 	Voltage drop
@@ -90,7 +98,7 @@ function App() {
           borderColor={winBox.borderColor}
           background={winBox.background}
         >
-          <div style={{ padding: '10px' }}>{winBox.content}</div>
+          <div class="winbox-content">{winBox.content}</div>
         </WinBox>
       ))}
     </div>
